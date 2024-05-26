@@ -30,9 +30,6 @@ h1 {
   border-bottom: 1px solid #F1F1F1;
 }
 
-.item:last-child {
-  border-bottom: 0;
-}
 
 input:checked+p {
   text-decoration: line-through;
@@ -63,8 +60,8 @@ button {
   border-color: transparent;
   background-color: #A683E3;
   color: #fff;
-  font-size: 30px;
-  padding-bottom: 6px;
+  font-size: 35px;
+  /* padding-bottom: 6px; */
   border-width: 0;
 }
 

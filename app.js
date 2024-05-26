@@ -5,13 +5,14 @@ const mongoose=require("mongoose");
 const _=require("lodash");
 
 const app = express();
+require('dotenv').config();
 
 app.set('view engine', 'ejs');
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
-mongoose.connect("mongodb+srv://apoorvakesarwani001:YPeZkPylxl2SIHKW@cluster0.j6qvjdw.mongodb.net/todo",{useNewUrlParser:true});
+mongoose.connect(process.env.MONGO_URI,{useNewUrlParser:true});
 
 const itemsSchema={
   name:String
